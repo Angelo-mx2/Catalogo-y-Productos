@@ -4,6 +4,7 @@ import com.vineyard.catalogo.model.Producto;
 import com.vineyard.catalogo.service.ProductoService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 
@@ -14,7 +15,8 @@ import java.util.List;
 @RequestMapping("/api/productos")
 public class ProductoController {
 
-    private final ProductoService productoService;
+    @Autowired
+    private ProductoService productoService;
 
     public ProductoController(ProductoService productoService) {
         this.productoService = productoService;
