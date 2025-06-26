@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @OpenAPIDefinition(
     info = @Info(
-        title = "Microservicio de Catálogo de Productos",
+        title = "API 2025 Gestion de Catálogo y Productos",
         version = "1.0",
         description = "API REST para la gestión de productos del catálogo, incluyendo comidas y bebidas."
     )
